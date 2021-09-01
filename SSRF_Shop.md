@@ -44,6 +44,5 @@ In this case an attacker is able to scan the server for its open ports. This is 
 Some examples are:
 
              https://b0x.com/page?url=http://localhost:22/
-
              https://b0x.com/page?url=http://127.0.0.1:25/
              https://b0x.com/page?url=http://127.0.0.1:3389/
