@@ -8,7 +8,7 @@ It stands for cross-site request forgery,
   <h3>To Test CSRF:</h3>
      It mainly occur where some event is perform or some submission of data or any other request changing 
      function is happening.so, to create a form by using burp suite or manually by including all the parameters.
-     then host the POC anywhere that is rechable to victim such as internet based server and then submit form to 
+     then host the POC any IP that is rechable to victim such as internet based server and then submit form to 
      the vulnerbale URL and at last test the creditianls.
      
 <h3>We can Perform </h3>
@@ -45,7 +45,7 @@ It stands for cross-site request forgery,
      we can also check that whether web application is checking valid token only or not. Random token with same length.
      
   3. 
-     Removing the token as well as token paramter value that whether web application is parsing a user without token 
+     Removing the token as well as token parameter value that whether web application is parsing a user without token 
      
      
  <h3>Case3:Refer Header Check</h3>
@@ -64,7 +64,7 @@ It stands for cross-site request forgery,
                   
    We need to purchase the domain name as "combox.in"
    
-   Host the poc by creating form and make the victim to perform the event.
+   Host the POC by creating form and make the victim to perform the event.
               
       
   
