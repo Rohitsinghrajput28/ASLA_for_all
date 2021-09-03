@@ -1,3 +1,6 @@
+Blind SQLI
+====
+
 Blind detection
 Sql injection trigger on sqlserver.
 
