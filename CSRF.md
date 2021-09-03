@@ -48,8 +48,8 @@ It stands for cross-site request forgery,
      Removing the token as well as token parameter value that whether web application is parsing a user without token 
      
      
- <h3>Case3:Refer Header Check</h3>
-     When web application is checking the refer header
+ <h3>Case3:Referer Header Check</h3>
+     When web application is checking the referer header
       defaultly set by the web browser and it
       can't be spoof/design
       
