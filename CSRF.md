@@ -1,7 +1,7 @@
 Cross-site Request Forgery
 ============
 It stands for cross-site request forgery,
-     it is a cliet side vulnerability,it is a web security vulnerability that allows an attacker
+     it is a client side vulnerability,it is a web security vulnerability that allows an attacker
      to perform unwanted activty on behalf of end user on the web application where he is currently 
      authenticated.
      
