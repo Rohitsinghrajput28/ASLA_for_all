@@ -1,5 +1,7 @@
 <h1>SQL Injection</h1>
 
+SQLi is a server side web security vulnerability.SQLi occurs when user supplied data is passing in SQL querry without sanitization.
+
 Union based SQL Injection
 =========================
  
@@ -47,7 +49,7 @@ Error based SQL Injection
 
 ->We can’t use direct select statement  in this function we have to make it inline query….
 
-and extractvalue(1,concat(0x7e,(select * from table name)))
+and extractvalue(1,concat(0x7e,(select table_name from information_schema.tables where table_schema=database() limit 0,1)))
 
 ->Here we make it inline query by injecting in (____) field.
 
