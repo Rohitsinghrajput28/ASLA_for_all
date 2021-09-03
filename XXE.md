@@ -28,4 +28,5 @@ Where sensitive data is transmitted from the application server to a system that
 Where the attacker can trigger a parsing error message containing sensitive data.    
 
 
+![ENTITY](https://user-images.githubusercontent.com/63788460/131953581-cbd117e1-e874-42e3-8982-3df94f6d5beb.jpeg)
 
