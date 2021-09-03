@@ -1,6 +1,6 @@
 Cross-Origin Resource Sharing
 =======
-CORS is a web security vulnerability that enables web browser to perform cross-origin request using XHR(XMLhttprequest)API in a controlled manner.
+CORS is a web security vulnerability that enables web browser to perform cross domain request using XHR(XMLhttprequest)API in a controlled manner.
 The Cross origin header also have an origin Request which defines domain intiating request.It also defines the protocol to use between the a web browser and server to check 
 whether a cross origin request is allowed or not.
 
