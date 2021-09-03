@@ -53,9 +53,8 @@ It stands for cross-site request forgery,
       defaultly set by the web browser and it
       can't be spoof/design
       
-     For example :
-     
-  We have 
+   For example :
+    We have 
   
      referer: http://abc.com/previous_web_page.html
    We can add Regex as 
