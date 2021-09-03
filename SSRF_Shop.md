@@ -5,21 +5,21 @@ Server Side Request Forgery
 In this case, web application is processing HTTP URL through GET/POST parameter and fetching the HTTP response from specified URL.
 For exmple:
 
-      http://web.com/index.php?wg=http://remote_host/image.jpg
+      http://b0x.com/index.php?wg=http://remote_host/image.jpg
 An attacker can pass the arbitrary URLs such as internal hosts IP. 
 For example:
 
-      http://web.com/index.php?wg=http://internal_host/admin/
+      http://b0x.com/index.php?wg=http://internal_host/admin/
       
 <h3>Case 2: File read functionality</h3>
 In this case, web application is reading file saved in server.
 For exmple:
 
-      http://web.com/index.php?read=log.txt
+      http://b0x.com/index.php?read=log.txt
 In this case, if web application is passing the user supplied data directly to a function which can read files not just from local system but also from HTTP URL, an attacker can perform SSRF.
 For example:
 
-      http://web.com/index.php?read=http://internal_host/admin/
+      http://b0x.com/index.php?read=http://internal_host/admin/
       
 <h3>Case 3: Dns Spoofing</h3>
 In this case,The web application has funcionality which allow user to fetch data from remote URL. User need to specify the remote URL with any IP or domain name.
@@ -36,7 +36,7 @@ The web application perform check if user has specified the input as "localhost"
                 http://web.com/index.php?loadfile=http://owndomain/b0x.txt
 
 <h3>Case 4:HTML to PDF generater script</h3>
-In this case, This the scenrio of the web app which is using HTML to PDF generator script and passing untrusted user supplied data to HTML file which is processed by HTML to PDF generator.
+In this case, This is the scenrio of the web app which is using HTML to PDF generator script and passing untrusted user supplied data to HTML file which is processed by HTML to PDF generator.
 
 For example:
             
