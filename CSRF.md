@@ -8,7 +8,7 @@ It stands for cross-site request forgery,
   <h3>To Test CSRF:</h3>
      It mainly occur where some event is perform or some submission of data or any other request changing 
      function is happening.so, to create a form by using burp suite or manually by including all the parameters.
-     then host the POC any IP that is rechable to victim such as internet based server and then submit form to 
+     then host the POC at any IP that is rechable to victim such as internet based server and then submit form to 
      the vulnerbale URL and at last test the creditianls.
      
 <h3>We can Perform </h3>
