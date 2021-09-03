@@ -12,8 +12,8 @@ For example:
       http://b0x.com/index.php?wg=http://internal_host/admin/
       
 <h3>Case 2: File read functionality</h3>
-In this case, web application is reading file saved in server.
-For exmple:
+In this case, web application is reading file saved on the server.
+For eaxmple:
 
       http://b0x.com/index.php?read=log.txt
 In this case, if web application is passing the user supplied data directly to a function which can read files not just from local system but also from HTTP URL, an attacker can perform SSRF.
