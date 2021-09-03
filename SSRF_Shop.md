@@ -1,5 +1,7 @@
 Server Side Request Forgery
 ==========
+SSRF is a web security vulnerability in which an attacker trick a web application server to fetch content from internally hosted web server
+or attack can perform ip& portscanning.
 
 <h3>Case 1: Normal SSRF scenario</h3>
 In this case, web application is processing HTTP URL through GET/POST parameter and fetching the HTTP response from specified URL.
