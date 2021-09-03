@@ -59,7 +59,7 @@ It stands for cross-site request forgery,
      referer: http://abc.com/previous_web_page.html
    We can add Regex as 
    
-     referer: http://abc.combox.inW
+     referer: http://abc.combox.in
                   
    We need to purchase the domain name as "combox.in"
    
