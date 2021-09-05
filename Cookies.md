@@ -22,7 +22,7 @@ It is used in following sections which are as given below:
  
 <h3>Syntax:</h3>
 
-   Set-Cookie: <name>=<value>[; <Max-Age>=<age>] [; expires=<date>][; domain=<domain_name>] [; path=<some_path>][; secure][; HttpOnly]
+      Set-Cookie: <name>=<value>[; <Max-Age>=<age>] [; expires=<date>][; domain=<domain_name>] [; path=<some_path>][; secure][; HttpOnly]
 
  <h3> Five attributes of cookie are as follows:</h3>
 <h3>Expire</h3>
