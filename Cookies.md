@@ -30,13 +30,13 @@ Sets a date until which the cookie is valid.This causes the browser to save the 
 the expiration date is reached.if this attribute is not set ,the cookie is used in current browser session.
 
 <h3>Domain</h3>
-Specifies the doamin for which the cookie is valid.This must be the same or a parent of the doamin from which the cookie is received.
+Specifies the doamin for which the cookie is valid.This must be the same or a parent of the domain from which the cookie is received.
 
 <h3>Path</h3>
-specifies the URL(Uniform Resource locater) path for which the cookie is valid.
+Specifies the URL(Uniform Resource locater) path for which the cookie is valid.
 
 <h3>Secure</h3>
-if this attribute is set ,the cookie will be submitted only in HTTPS request.
+If this attribute is set ,the cookie will be submitted only in HTTPS request.
 
 <h3>HTTPonly</h3>
 
