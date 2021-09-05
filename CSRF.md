@@ -64,6 +64,16 @@ It stands for cross-site request forgery,
    We need to purchase the domain name as "combox.in"
    
    Host the POC by creating form and make the victim to perform the event.
+   
+ <H3>PREVENTION</H3>
+ 
+ 1.Unpredictable with high entropy, as for session tokens in general.
+ 
+ 2.Tied to the user's session.
+ 
+ 3.Strictly validated in every case before the relevant action is executed.
+   
+
               
       
   
