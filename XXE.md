@@ -27,6 +27,12 @@ Where sensitive data is transmitted from the application server to a system that
 
 Where the attacker can trigger a parsing error message containing sensitive data.    
 
+<h3>How to prevent XXE vulnerabilities</h3>
+
+Virtually all XXE vulnerabilities arise because the application's XML parsing library supports potentially dangerous XML features that the application does not need or intend to use. The easiest and most effective way to prevent XXE attacks is to disable those features.
+
+Generally, it is sufficient to disable resolution of external entities and disable support for XInclude. This can usually be done via configuration options or by programmatically overriding default behavior. Consult the documentation for your XML parsing library or API for details about how to disable unnecessary capabilities.
+
 
 ![ENTITY](https://user-images.githubusercontent.com/63788460/131953581-cbd117e1-e874-42e3-8982-3df94f6d5beb.jpeg)
 
