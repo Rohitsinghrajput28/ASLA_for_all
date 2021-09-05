@@ -22,7 +22,18 @@ In this scenario, application HTTP response header "Access-Control-Allow-Origin"
 When user specify any value other than null, application does not process it and keep reflecting "null" in HTTP response.
 There are few tricks which allow an attacker to perform exploitation and can ex-filtrate data of victim using CORS request.
 
+<h3>How to prevent CORS-based attacks</h3>
+CORS vulnerabilities arise primarily as misconfigurations. Prevention is therefore a configuration problem. The following sections describe some effective defenses against CORS attacks.
 
+<h3>1.Proper configuration of cross-domain requests</h3>
+If a web resource contains sensitive information, the origin should be properly specified in the Access-Control-Allow-Origin header.
+
+<h3>2.Only allow trusted sites</h3>
+It may seem obvious but origins specified in the Access-Control-Allow-Origin header should only be sites that are trusted. In particular, dynamically reflecting origins from cross-domain requests without validation is readily exploitable and should be avoided.
+
+<h3>3.Avoid whitelisting null</h3>
+
+Avoid using the header Access-Control-Allow-Origin: null. Cross-domain resource calls from internal documents and sandboxed requests can specify the null origin. CORS headers should be properly defined in respect of trusted origins for private and public servers.
 
 
 
