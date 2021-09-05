@@ -30,5 +30,5 @@ Because every beginner or learner needs to keep the stuff in such a place which 
 
 <h3>LFI&RFI Test caseS</h3>
 
-[Local File & Remote File Inclusion](LFI&RFI.md)
+[File Inclusion](FI.md)
 
