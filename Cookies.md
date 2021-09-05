@@ -29,7 +29,7 @@ It is used in following sections which are as given below:
 Sets a date until which the cookie is valid.This causes the browser to save the cookie to persistent storage and it is used in subsequent browser sessions until the expiration date is reached.if this attribute is not set ,the cookie is used in current browser session.
 
 <h3>Domain</h3>
-Specifies the doamin for which the cookie is valid.This must be the same or a parent of the domain from which the cookie is received.
+Specifies the domain for which the cookie is valid.This must be the same or a parent of the domain from which the cookie is received.
 
 <h3>Path</h3>
 Specifies the URL(Uniform Resource locater) path for which the cookie is valid.
