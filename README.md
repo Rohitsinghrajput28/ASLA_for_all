@@ -12,23 +12,23 @@ Because every beginner or learner needs to keep the stuff in such a place which 
 
 [Server Side Request Forgery test cases](SSRF_Shop.md)
 
-<h3>CSRF Test caseS</h3>
+<h3>CSRF Test cases</h3>
 
 [Cross-site Request forgery](CSRF.md)
 
-<h3>Cors Test caseS</h3>
+<h3>Cors Test cases</h3>
 
 [Cross-Origin Resource Sharing](CORS.MD)
 
-<h3>XXE Test caseS</h3>
+<h3>XXE Test cases</h3>
 
 [XML External Entity](XXE.md)
 
-<h3>Cookies Test caseS</h3>
+<h3>Cookies Test cases</h3>
 
 [COOKIES](Cookies.md)
 
-<h3>LFI&RFI Test caseS</h3>
+<h3>FI Test cases</h3>
 
 [File Inclusion](FI.md)
 
