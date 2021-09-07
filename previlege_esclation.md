@@ -27,6 +27,17 @@ as addition,deletion & modification on behalf of other user at lower to high pre
 For Example:
 
 
+<H3>IDOR<H3>
+ 
+ IDOR stands for insecure-direct object reference is a access control type web security vulnerability in which it allows an attacker to only view data of other users it depend upon the object reference through it allow to view other users to view data.
+ 
+ >>>    For example:
+ 
+            
+ To view data of other users with the object reference i.e user_id parameter 
+ 
+     http://indishell/B0x.php?user_id=1
+
 
 
 
