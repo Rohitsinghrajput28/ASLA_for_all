@@ -17,6 +17,10 @@ Once the data is exported, the spreadsheet executes the malicious payload on the
 
 <h3>Mass Assignment</h3>
     
- When there are 2 parameters and the user insert the third un-recognised parameter and aceepted without validating is described as Mass assignment.
+ When there are 2 parameters and the user insert the third un-recognised parameter and aceepted without validating is described as Mass assignment.h3
+ 
+ <h3>HTTP Parameter Pollution</h3>
+  
+  HTTP Parameter Pollution (HPP) is a Web attack evasion technique that allows an attacker to craft a HTTP request in order to manipulate or retrieve hidden information. 
     
     
