@@ -1,7 +1,7 @@
 File Inclusion:
 ===
 File inclusion is a web security vulnerability 
-in which user supplied data is include in include() without sanitization on the web application.RFI
+in which user supplied data is include in include() without sanitization on the web application.
 
 File inclusion is classified as two types:
 
@@ -55,7 +55,7 @@ Note:- If we find any problem or application not allow to fetch data then we wil
 and can fetch the data from the remote URL.
 
 if we are appending php code in the b0x file then we have to save it as .txt file on the internet based server.
-This is how we can exxploit RFI.
+This is how we can exploit RFI.
 
 
 
