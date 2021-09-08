@@ -24,5 +24,9 @@ Once the data is exported, the spreadsheet executes the malicious payload on the
  <h3>HTTP Parameter Pollution</h3>
   
   HTTP Parameter Pollution (HPP) is a Web attack evasion technique that allows an attacker to craft a HTTP request in order to manipulate or retrieve hidden information. 
-    
+   For example:
+   
+   Regular attack: http://webApplication/showproducts.asp?prodID=9 UNION SELECT 1,2,3 FROM Users WHERE id=3 —
+
+Attack using HPP: http://webApplication/showproducts.asp?prodID=9 /*&prodID=*/UNION /*&prodID=*/SELECT 1 &prodID=2 &prodID=3 FROM /*&prodID=*/Users /*&prodID=*/ WHERE id=3 —- -
     
