@@ -1,7 +1,9 @@
 Formula injection:
 ====
 when web application is processing user supplied data in EXPORT functionality spread sheet.
-                    <h3>or</h3>
+
+>>> OR
+                          
 CSV Injection occurs when the data injection occurs when the data in a spreadsheet cell is not properly validated prior to export. 
 The attacker usually injects a malicious payload (formula) into the input field.
 Once the data is exported, the spreadsheet executes the malicious payload on the assumption of a standard macro.
