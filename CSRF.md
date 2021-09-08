@@ -22,7 +22,7 @@ It stands for cross-site request forgery,
      
      <html>
      <body>
-     <form method="GET" action="http://b0x.com/changepasword"
+     <form method="GET" action="http://b0x.com/changepasword">
      <input type="hidden" name="new_password" value="pass123">
      <input type="hidden" name="conf_password" value="pass123">
      <input type="submit" name="change">
