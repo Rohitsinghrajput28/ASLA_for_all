@@ -9,7 +9,7 @@ File inclusion is classified as two types:
 
 2.RFI(Remote File Inclusion)
 
-<h3>LFI<h3>
+<h3>LFI</h3>
 
 Local File Inclusion (LFI) allows an attacker to include files on a server through the web browser. 
 This vulnerability exists when a web application includes a file without correctly sanitising the input, 
