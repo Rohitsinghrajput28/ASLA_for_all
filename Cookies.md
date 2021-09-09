@@ -31,12 +31,18 @@ Sets a date until which the cookie is valid.This causes the browser to save the 
 <h3>Domain</h3>
 Specifies the domain for which the cookie is valid.This must be the same or a parent of the domain from which the cookie is received.
 
+mis_configured domain attribute : if the session cookie usable on another domain?(broadly scoped session cookie domain)
+if the domain is set as domain=.domain.com;
+
 <h3>Path</h3>
-Specifies the URL(Uniform Resource locater) path for which the cookie is valid.
+Specifies the URL(Uniform Resource locater) path(directory) for which the cookie is valid.
+for example: 
+path=/;
 
 <h3>Secure</h3>
-If this attribute is set ,the cookie will be submitted only in HTTPS request.
+If this attribute is set ,the cookie will be submitted only in HTTPS request.it is checked by the browser. 
 
 <h3>HTTPonly</h3>
 
-If this attribute is set , the cookie cannot be directly accessed via client-side javascript.
+If this attribute is set , the cookie cannot be directly accessed via client-side javascript.it is checked by the browser
+
