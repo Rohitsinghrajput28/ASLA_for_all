@@ -44,10 +44,11 @@ It stands for cross-site request forgery,
    2.Justification:valid token
      we can also check that whether web application is checking valid token only or not. Random token with same length.
      
-  3. 
-     Removing the token as well as token parameter value that whether web application is parsing a user without token 
+  3.Removing the token as well as token parameter value that whether web application is parsing a user without token   
      
-     
+  4. we can change request method if there is "GET" method we can change it to "POST"
+  
+  
  <h3>Case3:Referer Header Check</h3>
      When web application is checking the referer header
       defaultly set by the web browser and it
