@@ -58,7 +58,9 @@ and can fetch the data from the remote URL.
 if we are appending php code in the b0x file then we have to save it as .txt file on the internet based server.
 This is how we can exploit RFI.
 
+prevention:
 
+1.url encodig in relative path
 
 
 THANKS
