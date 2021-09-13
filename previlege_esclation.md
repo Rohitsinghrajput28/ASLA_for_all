@@ -41,9 +41,13 @@ For Example:
 
 Prevention:
 
-    1.Never rely on obfuscation alone for access control.
-    2.Unless a resource is intended to be publicly accessible, deny access by default.
-    3.Wherever possible, use a single application-wide mechanism for enforcing access controls.
-    4.At the code level, make it mandatory for developers to declare the access that is allowed for each         resource, and deny access by default.
-    5.Thoroughly audit and test access controls to ensure they are working as designed.
+  1.Never rely on obfuscation alone for access control.
+  
+  2.Unless a resource is intended to be publicly accessible, deny access by default.
+  
+  3.Wherever possible, use a single application-wide mechanism for enforcing access controls.
+  
+  4.At the code level, make it mandatory for developers to declare the access that is allowed for each resource, and deny access by default.
+  
+  5.Thoroughly audit and test access controls to ensure they are working as designed.
 
