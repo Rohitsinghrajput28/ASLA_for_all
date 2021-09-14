@@ -54,3 +54,13 @@ The vanilla Billion Laughs attack is illustrated in the XML file represented bel
             ]>
             <lolz>&lol9;</lolz>
 
+Dirb
+===
+
+To perform directory search
+
+     ./dirb http://www.test.org/ word_list.txt
+    
+To perform file name search with specific extension. Below mentioned example will check for files name with extensions .html and .asp
+
+     ./dirb https://www.test.org/ common.txt -X .html,.asp
