@@ -64,3 +64,35 @@ To perform directory search
 To perform file name search with specific extension. Below mentioned example will check for files name with extensions .html and .asp
 
      ./dirb https://www.test.org/ common.txt -X .html,.asp
+     
+N-MAP
+===
+
+ To find out firewall IS active or not
+ 
+            nmap -sA 192.168.0.1 
+ 
+  Fast scan
+
+          nmap -F 192.168.0.1  
+
+   For udp ports scan
+
+            nmap -sU 192.168.0.1 
+
+  For specific port
+
+            nmap -F 192.168.0.1 -p 47,49
+
+   When firewall blocking the ping request
+
+              nmap -F 192.168.0.1-pn
+
+   To find host version & service
+
+            nmap -sV 192.168.0.1
+
+
+
+
+     
