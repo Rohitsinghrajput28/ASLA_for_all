@@ -40,11 +40,9 @@ The web application perform check if user has specified the input as "localhost"
 <h3>Case 4:HTML to PDF generater script</h3>
 In this case, This is the scenrio of the web app which is using HTML to PDF generator script and passing untrusted user supplied data to HTML file which is processed by HTML to PDF generator.
 
-When HTML code will be processed by the "HTML to PDF generator", HTML code will be evaluated to corresponding representation of that HTML code in web browser.
 
 In this case, if attacker supplied data is not getting senitized or filtered before placing it to HTML code, attacker can trick "HTML to PDF generator" software to access the internal Hosts/domains.
 When HTML code will be processed by the "HTML to PDF generator", HTML code will be evaluated to corresponding representation of that HTML code in web browser. 
-In this case, if attacker supplied data is not getting senitized or filtered before placing it to HTML code, attacker can trick "HTML to PDF generator" software to access the internal Hosts/domains.
 
 
 
