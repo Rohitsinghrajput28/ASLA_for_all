@@ -57,6 +57,10 @@ The vanilla Billion Laughs attack is illustrated in the XML file represented bel
 Dirb
 ===
 
+DIRB is a command line based tool to brute force any directory based on wordlists. 
+DIRB will make an HTTP request and see the HTTP response code of each request
+
+
 To perform directory search
 
      ./dirb http://www.test.org/ word_list.txt
