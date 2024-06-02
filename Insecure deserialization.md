@@ -16,6 +16,11 @@ SQL injection
 <h3>Mitigations</h3>
 Intigrity checks
 
+<h3>Application Security Practices</h3>
+
+Apply Principle of Least Privilege: Ensure that the application and its components operate with the least amount of privilege necessary.
+Encrypt Serialized Data: Encrypt serialized data in transit and at rest to prevent tampering.
+
 <h3>Data Handling and Validation</h3>
 
 Use Strong Typing: Ensure that only objects of the expected type are deserialized.
@@ -24,6 +29,7 @@ Validate Data: Validate incoming serialized data against a whitelist of expected
 
 Do Not Deserialize Untrusted Data: Avoid deserializing data from untrusted sources whenever possible.
 Use Safe Data Formats: Prefer data formats that do not support direct object deserialization, such as JSON or XML, instead of binary serialization formats that can be more dangerous.
+
 <h3>Deserialization Framework and Library Controls</h3>
 
 Use Libraries with Care: Be cautious with deserialization libraries. Choose libraries that have built-in security features or are known to be more secure.
