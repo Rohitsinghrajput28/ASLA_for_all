@@ -1,0 +1,113 @@
+To find sub domains:
+======================
+for ip in $(cat list.txt); do host $ip.megacorpone.com; done
+
+dns finder:
+================
+dnsrecon -d megacorpone.com -t std
+
+dnsenum megacorpone.com
+
+to connect to RDP:
+=======================
+xfreerdp /u:student /p:lab /v:192.168.50.152
+
+to check host info:
+=========================
+nslookup mail.megacorptwo.com
+
+
+RDP to connect:
+======================
+xfreerdp /u:student /p:lab /v:192.168.50.152
+
+open ports:
+=====================
+nc -n -w 1 -z 192.168.130.151  1-10000 |grep open
+
+open port of UDP:
+=====================
+nc -nv -u -z -w 1 192.168.50.149 120-123
+
+port scanning tcp:
+==========================
+ windows
+1..1024 | % {echo ((New-Object Net.Sockets.TcpClient).Connect("192.168.50.151", $_)) "TCP port $_ is open"} 2>$null
+
+
+sudo nmap -sS 192.168.130.1-253 -oG file.txt
+
+sudo nmap -v --script http-title 192.168.130.1-255 |grep Under 
+
+nmap -v -p 139,445 --script smb-os-discovery 192.168.50.152
+
+net view \\dc01 /all
+
+smb:
+================
+nmap -v -p 139,445 -oG smb.txt 192.168.50.1-254
+cat smb.txt
+
+nbt scan:
+===============
+sudo nbtscan -r 192.168.50.0/24
+
+ls -1 /usr/share/nmap/scripts/smb*
+
+nmap -v -p 139,445 --script smb-os-discovery 192.168.50.152
+
+Using Python to script the SMTP user enumeration :
+======================================================
+#!/usr/bin/python
+
+import socket
+import sys
+
+if len(sys.argv) != 3:
+        print("Usage: vrfy.py <username> <target_ip>")
+        sys.exit(0)
+
+# Create a Socket
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+# Connect to the Server
+ip = sys.argv[2]
+connect = s.connect((ip,25))
+
+# Receive the banner
+banner = s.recv(1024)
+
+print(banner)
+
+# VRFY a user
+user = (sys.argv[1]).encode()
+s.send(b'VRFY ' + user + b'\r\n')
+result = s.recv(1024)
+
+print(result)
+
+# Close the socket
+s.close()
+
+
+enum4linux to enumerate those machines:
+ enumforlinux <IP>
+
+
+Introduction to web application attacks:
+================
+Running Nmap scan to discover web server version:
+sudo nmap -p80  -sV 192.168.50.20
+
+Running Gobuster:
+gobuster dir -u 192.168.50.20 -w /usr/share/wordlists/dirb/common.txt -t 5
+
+Running curl cmd:
+curl https://www.google.com/robots.txt
+
+Gobuster pattern:
+{GOBUSTER}/v1
+{GOBUSTER}/v2
+
+Bruteforcing API Paths:
+gobuster dir -u http://192.168.50.16:5002 -w /usr/share/wordlists/dirb/big.txt -p pattern
