@@ -32,3 +32,6 @@ Because every beginner or learner needs to keep the stuff in such a place which 
 
 [File Inclusion](FI.md)
 
+<h3>GRAPH QL Test Cases</h3>
+
+[GraphQL Test Cases](https://github.com/Rohitsinghrajput28/ASLA_for_all/blob/master/GraphQL%20Test%20Cases.md))
