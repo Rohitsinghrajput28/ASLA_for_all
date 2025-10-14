@@ -105,6 +105,8 @@ query IntrospectionQuery {\n      __schema {\n        \n        queryType { name
 8.	In Burp Repeater, click on the Send button.
 9.	Observe that the entire GraphQL schema has been disclosed in the response, which can be further used to create "Mutation" and "Query" used by the application.
 
+Introspectio query: {"query": "query IntrospectionQuery{__schema{queryType{name}mutationType{name}subscriptionType{name}types{...FullType}directives{name description locations args{...InputValue}}}}fragment FullType on __Type{kind name description fields(includeDeprecated:true){name description args{...InputValue}type{...TypeRef}isDeprecated deprecationReason}inputFields{...InputValue}interfaces{...TypeRef}enumValues(includeDeprecated:true){name description isDeprecated deprecationReason}possibleTypes{...TypeRef}}fragment InputValue on __InputValue{name description type{...TypeRef}defaultValue}fragment TypeRef on __Type{kind name ofType{kind name ofType{kind name ofType{kind name ofType{kind name ofType{kind name ofType{kind name ofType{kind name}}}}}}}}"}
+
 Remidiation:
 
 To remediate this issue, ensure Introspection is disabled in the production environment. In order to restrict the usage of the Introspection system, consider using validation rules that prohibits the parsing of queries containing "_type" and/or "_schema" fields.
