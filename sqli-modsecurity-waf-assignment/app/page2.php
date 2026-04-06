@@ -1,16 +1,18 @@
-<?php
-$conn = new mysqli("localhost", "root", "", "sqli_lab");
+<?PHP
+$CONN = NEW MYSQLI("LOCALHOST", "ROOT", "", "SQLI_LAB");
 
-if ($_POST) {
-    $user = $_POST['username'];
-    $query = "SELECT * FROM users WHERE username='$user'";
-    $result = $conn->query($query);
+IF ($_POST) {
+  $USER = $_POST['USERNAME'];
+  $STMT = $CONN->PREPARE("SELECT * FROM USERS WHERE USERNAME=?");
+  $STMT->BIND_PARAM("S", $USER);
+  $STMT->EXECUTE();
+  $RESULT = $STMT->GET_RESULT();
 
-    echo ($result->num_rows > 0) ? "Login Successful" : "Login Failed";
+  ECHO ($RESULT->NUM_ROWS > 0) ? "LOGIN SUCCESSFUL" : "LOGIN FAILED";
 }
 ?>
 
-<form method="POST">
-    <input name="username">
-    <button type="submit">Login</button>
-</form>
+<FORM METHOD="POST">
+  <INPUT NAME="USERNAME">
+  <BUTTON TYPE="SUBMIT">LOGIN</BUTTON>
+</FORM>
